@@ -77,6 +77,15 @@ This system we solve in our algorithm.
 
 ### How to use
 ***
-1. Create new input file with $python3 run.py --get_json or $python3 run.py --get_json --json_name FILE.json
-2. Edit default.json or FILE.json (see details below)
-3. Run script: $python3 run.py [--json_name FILE.json]
+1. Create new input file with **$python3 run.py --get_json** or **$python3 run.py --get_json --json_name FILE.json**
+2. Edit **default.json** or **FILE.json** (see details below)
+3. Run script: **$python3 run.py [--json_name FILE.json]**
+
+### Input parameters
+***
+File default.json includes all the parameters that you can use to regulate the process of the script. 
+
+Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
+--- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
+
