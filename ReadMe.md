@@ -1,4 +1,4 @@
-# My solve of Sitnikov problem
+# My solution of Sitnikov problem
 ***
 
 ## Description
