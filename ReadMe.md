@@ -8,7 +8,7 @@
 ***
 
 1. Solve Sitnikov problem for one or any data
-2. Create and plot Poinkare map.
+2. Create and plot Poincare map.
 
 ### Equation of motion
 
@@ -83,10 +83,13 @@ This system we solve in our algorithm.
 
 ### Input parameters
 ***
-File default.json includes all the parameters that you can use to regulate the process of the script. All parameters are divided into blocks.
+File json includes all the parameters that you can use to regulate the process of the script. All parameters are divided into blocks.
 
-**1. IO**
+**1. Solve Sitnikov problem for one or any data** Use this part if you want to get solution for one or any initial data.
+
+**1.1 hand_data**. Use this part if you want to get solution for one pair of initial data. All this parameters will be ignore, if you use the parameters in part 1.2
 Name | Description | Type | Example |
 ---  | ---         | ---  | ---     |
-A    | Test        | string | test.py|
+h    | Initial height of third body above the plane.        | float |   1.0|
+e    | 
  
