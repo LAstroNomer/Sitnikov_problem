@@ -10,6 +10,8 @@
 1. Solves Sitnikov problem for one or any data
 2. Creates and plots Poincare map.
 
+All results are output in physical quantities $t$, $\frac{dZ(t)}{dt}$, $Z(t)$. Details and dimensions are described in the paragraph below. 
+
 ### Equation of motion
 
 ***
@@ -73,7 +75,7 @@ $$
     \end{cases}
 $$
 
-This system we solve in our algorithm.
+This system we solve in our algorithm. When we output the results, we go back from E to t.
 
 ### How to use
 ***
@@ -85,11 +87,28 @@ This system we solve in our algorithm.
 ***
 File json includes all the parameters that you can use to regulate the process of the script. All parameters are divided into blocks.
 
-**1. Solve Sitnikov problem for one or any data** Use this part if you want to get solution for one or any initial data.
+**1. Solve Sitnikov problem for one or any data** Use this part if you want to get solution for one or any initial data. **Note** that the solution is displayed on a uniform time grid, which is set in 1.1. 
 
-**1.1 hand_data**. Use this part if you want to get solution for one pair of initial data. All this parameters will be ignore, if you use the parameters in part 1.2
-Name | Description | Type | Example |
+**1.1 common_parameters**. In this part you set common parameters. They will be applied the same way for both 1.2 and 1.3
+Name | Description | Type | Default |
+---  | ---         | ---  | ---     |
+run  | The main key. Responsible for starting point 1. If false, the entire block will be skipped   | bool | false |
+tmax | Maximum time value| float| 10 $\cdot 2 \pi \approx 62.8...$|
+step | Step along the time axis | float| 0.1|
+result_dir| The path to the folder for uploading the results of the script. By default, the same folder | string or null| null|
+
+
+**1.2 hand_data**. Use this part if you want to get solution for one pair of initial data. All this parameters will be ignore, if you use the parameters in part 1.2
+Name | Description | Type | Default |
 ---  | ---         | ---  | ---     |
 h    | Initial height of third body above the plane.        | float |   1.0|
-e    | 
- 
+e    | Eccentricity of an elliptical orbit| float 0 $\le$ e < 1 | 0.0|
+
+**1.3 from_file**. Use this part if you want to get solution for any dots of initial data. The input file must be in text format. It should have two columns for $e$ and $h$ respectively.
+
+Name | Description | Type | Default |
+---  | ---         | ---  | ---     |
+data_file    | Path to input file. If value is 'null' all this block will be ignore.         | string or null|   null|
+skip_rows| The count of lines that should be skipped | integer | 0|
+delimiter| The symbol used to separate the columns. If you use spaces or tabs, then do not change this parameter | string or null| null
+
