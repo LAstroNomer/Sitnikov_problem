@@ -61,3 +61,23 @@ $$
     t = E - e \sin(E)
     \end{cases}
 $$
+
+
+And finally we will replace the variables:
+
+$$
+    \frac{dE}{dt} = 
+$$
+
+
+ <style>
+   p {
+    border: 1px solid red;
+    padding: 10px;
+   }
+  </style>
+  <body>
+  <p>Нет страшнее зверя в сибирских лесах, чем разъяренный заяц-мутант.  
+  Вы видели, какие у него зубы? О, даже медведь боится этих зубов! А, как известно, 
+  медведи больше ничего не боятся.</p>
+ </body>
