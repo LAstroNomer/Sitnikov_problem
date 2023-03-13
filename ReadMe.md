@@ -1,16 +1,16 @@
 # My solve of Sitnikov problem
 ***
 
-# Description
+## Description
 ***
 
-## What does this script do?
+### What does this script do?
 ***
 
 1. Solve Sitnikov problem for one or any data
 2. Create and plot Poinkare map.
 
-## Equation of motion
+### Equation of motion
 
 ***
 
@@ -66,18 +66,12 @@ $$
 And finally we will replace the variables:
 
 $$
-    \frac{dE}{dt} = 
+    \frac{dE}{dt} = \frac{1}{1 - e\cos(E)} = \frac{1}{r}
 $$
 
 
- <style>
-   p {
-    border: 1px solid red;
-    padding: 10px;
-   }
-  </style>
-  <body>
-  <p>Нет страшнее зверя в сибирских лесах, чем разъяренный заяц-мутант.  
+<p border="1px">
+Нет страшнее зверя в сибирских лесах, чем разъяренный заяц-мутант.  
   Вы видели, какие у него зубы? О, даже медведь боится этих зубов! А, как известно, 
-  медведи больше ничего не боятся.</p>
- </body>
+  медведи больше ничего не боятся.
+</p>
