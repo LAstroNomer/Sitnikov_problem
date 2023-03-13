@@ -32,8 +32,8 @@ $$
 where $E$ we get from Kepler equation: $M(t) = n \cdot t = E - e \sin(E)$. Next, we rewrite the equation in the form of a system:
 
 $$
-    \begin{case} 
+    \begin{cases} 
     \dot{z} = \nu \\  
     \dot{nu} =  - 2 G M \frac{z}{(\rho(t)^2 + z^2)^{3/2}} 
-    \end{case}
+    \end{cases}
 $$
