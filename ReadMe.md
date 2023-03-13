@@ -63,9 +63,11 @@ $$
 And finally we will replace the variables:
 
 $$
+    \frac{dE}{dt} = \frac{1}{1 - e\cos(E)} = \frac{1}{2\rho}
+$$
+$$
     \begin{cases} 
-    \frac{dE}{dt} = \frac{1}{1 - e\cos(E)} = \frac{1}{2\rho} \\
-    \frac{dz}{dE} = 2 \rho \nu
+    \frac{dz}{dE} = 2 \rho \nu\\
     \frac{d\nu}{dE} = - \frac{2 \rho z}{(z^2 + \rho^2)^{3/2}}
     \end{cases}
 $$
