@@ -14,7 +14,7 @@
 
 ***
 
-The Sitnikov problem is a particular case of 3-body problem. We have two body with masses $m_1$ and $m_2$. They move on elliptic orbits around common center of mass by Kepler law. Therd body moves perpendicular to the plane of their orbits throught the center of mass. The mass of therd body we accept equals to zero. This situation is depicted in the figure below.
+The Sitnikov problem is a particular case of 3-body problem. We have two body with masses $m_1 = m_2 = m$. They move on elliptic orbits around common center of mass by Kepler law. Therd body moves perpendicular to the plane of their orbits throught the center of mass. The mass of therd body we accept equals to zero. This situation is depicted in the figure below.
 <p align="center">
 <img  src="https://github.com/LAstroNomer/Sitnikov_problem/blob/master/Sitnikov_Problem_Konfiguration.jpeg"  width="350" />
 </p>
@@ -22,7 +22,7 @@ The Sitnikov problem is a particular case of 3-body problem. We have two body wi
 We take the axis of application ($z$) along the movement of the third body. The equation of motion is:
 
 $$
-    \frac{d^2z}{dt^2} = - 2 G M \frac{z}{(\rho(t)^2 + z^2)^{3/2}}
+    \frac{d^2z}{dt^2} = -  \frac{2 G M z}{(\rho(t)^2 + z^2)^{3/2}}
 $$
 
 $$
@@ -34,6 +34,15 @@ where $E$ we get from Kepler equation: $M(t) = n \cdot t = E - e \sin(E)$. Next,
 $$
     \begin{cases} 
     \dot{z} = \nu \\  
-    \dot{nu} =  - 2 G M \frac{z}{(\rho(t)^2 + z^2)^{3/2}} 
+    \dot{\nu} =  - \frac{2 G M z}{(\rho(t)^2 + z^2)^{3/2}} 
     \end{cases}
 $$
+
+Changing the system of units:
+
+$$
+A_{total} = a+a = 1
+GM_{total} = 2Gm = 1
+$$
+
+We get $T = 2 \pi and n = 1$
