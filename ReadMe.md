@@ -87,6 +87,13 @@ This system we solve in our algorithm. When we output the results, we go back fr
 ***
 File json includes all the parameters that you can use to regulate the process of the script. All parameters are divided into blocks.
 
+**0. Integrator** This part include information required by the integrator. In my script i use [scipy.integrate.solve_ivp](https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.solve_ivp.html) to solve the system of ODE. For more information, see the scipy documentation.
+Name | Description | Type | Default |
+---  | ---         | ---  | ---     |
+$atol$ \& $rtol$| Relative and absolute tolerances. The solver keeps the local error estimates less than $atol + rtol \cdot abs(y)$. Here $rtol$ controls a relative accuracy (number of correct digits), while $atol$ controls absolute accuracy (number of correct decimal places). | float | $10^{-10}$ \& $10^{-6}$|
+Method| Integration method to use| string| DOP853 |
+
+
 **1. Solve Sitnikov problem for one or any data** Use this part if you want to get solution for one or any initial data. **Note** that the solution is displayed on a uniform time grid, which is set in 1.1. 
 
 **1.1 common_parameters**. In this part you set common parameters. They will be applied the same way for both 1.2 and 1.3
