@@ -88,5 +88,12 @@ File default.json includes all the parameters that you can use to regulate the p
 Name | Description | Type | Example |
 ---  | ---         | ---  | ---     |
 A    | Test        | string | test.py|
-            BBB                  ||||
 
+|             |          Grouping           ||
+First Header  | Second Header | Third Header |
+ ------------ | :-----------: | -----------: |
+Content       |          *Long Cell*        ||
+Content       |   **Cell**    |         Cell |
+
+New section   |     More      |         Data |
+And more      | With an escaped '\|'         ||  
