@@ -54,7 +54,7 @@ $$
     \begin{cases} 
     \dot{z} = \nu \\  
     \dot{\nu} =  - \frac{z}{(\rho(t)^2 + z^2)^{3/2}}\\
-    \rho(t) = 1 + e \cos(E)\\
+    \rho(t) = 0.5(1 + e \cos(E))\\
     t = E - e \sin(E)
     \end{cases}
 $$
@@ -63,7 +63,12 @@ $$
 And finally we will replace the variables:
 
 $$
-    \frac{dE}{dt} = \frac{1}{1 - e\cos(E)} = \frac{1}{r}
+    \begin{cases} 
+    \frac{dE}{dt} = \frac{1}{1 - e\cos(E)} = \frac{1}{2\rho} \\
+    \frac{dz}{dE} = 2 \rho \nu
+    \frac{d\nu}{dE} = - \frac{2 \rho z}{(z^2 + \rho^2)^{3/2}}
+    \end{cases}
 $$
 
+This system we solve in our algorithm.
 
