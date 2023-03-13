@@ -83,17 +83,10 @@ This system we solve in our algorithm.
 
 ### Input parameters
 ***
-File default.json includes all the parameters that you can use to regulate the process of the script. 
+File default.json includes all the parameters that you can use to regulate the process of the script. All parameters are divided into blocks.
 
+**1. IO**
 Name | Description | Type | Example |
 ---  | ---         | ---  | ---     |
 A    | Test        | string | test.py|
-
-|             |          Grouping           ||
-First Header  | Second Header | Third Header |
- ------------ | :-----------: | -----------: |
-Content       |          *Long Cell*        ||
-Content       |   **Cell**    |         Cell |
-
-New section   |     More      |         Data |
-And more      | With an escaped '\|'         ||  
+ 
