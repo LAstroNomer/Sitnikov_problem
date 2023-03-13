@@ -75,3 +75,8 @@ $$
 
 This system we solve in our algorithm.
 
+### How to use
+***
+1. Create new input file with $python3 run.py --get_json or $python3 run.py --get_json --json_name FILE.json
+2. Edit default.json or FILE.json (see details below)
+3. Run script: $python3 run.py [--json_name FILE.json]
