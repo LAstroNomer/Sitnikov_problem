@@ -22,11 +22,18 @@ The Sitnikov problem is a particular case of 3-body problem. We have two body wi
 We take the axis of application ($z$) along the movement of the third body. The equation of motion is:
 
 $$
-    \frac{d^2z}{dt^2} = - \frac{z}{(\rho(t)^2 + z^2)^{3/2}}
+    \frac{d^2z}{dt^2} = - 2 G M \frac{z}{(\rho(t)^2 + z^2)^{3/2}}
 $$
 
 $$
     \rho(t) = a(1 + e \cos(E(t)))
 $$
 
-where $E$ we get from Kepler equation: $M(t) = n \cdot t = E - e \sin(E)$  
+where $E$ we get from Kepler equation: $M(t) = n \cdot t = E - e \sin(E)$. Next, we rewrite the equation in the form of a system:
+
+$$
+    \begin{case} 
+    \dot{z} = \nu \\  
+    \dot{nu} =  - 2 G M \frac{z}{(\rho(t)^2 + z^2)^{3/2}} 
+    \end{case}
+$$
