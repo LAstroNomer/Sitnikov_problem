@@ -42,7 +42,22 @@ Changing the system of units:
 
 $$
 A_{total} = a+a = 1
+$$
+
+$$
 GM_{total} = 2Gm = 1
 $$
 
-We get $T = 2 \pi and n = 1$
+We get:
+$$
+T = 2 \pi$ and $n = 1
+$$ 
+
+$$
+    \begin{cases} 
+    \dot{z} = \nu \\  
+    \dot{\nu} =  - \frac{z}{(\rho(t)^2 + z^2)^{3/2}}\\
+    \rho(t) = 1 + e \cos(E)\\
+    t = E - e \sin(E)
+    \end{cases}
+$$
