@@ -65,6 +65,7 @@ And finally we will replace the variables:
 $$
     \frac{dE}{dt} = \frac{1}{1 - e\cos(E)} = \frac{1}{2\rho}
 $$
+
 $$
     \begin{cases} 
     \frac{dz}{dE} = 2 \rho \nu\\
