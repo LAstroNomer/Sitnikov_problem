@@ -14,7 +14,7 @@
 
 ***
 
-The Sitnikov problem is a particular case of 3-body problem. We have two bodies with masses $m_1 = m_2 = m$. They move on elliptic orbits around common center of mass by Kepler law. Third body moves perpendicular to the plane of their orbits through the center of mass. The mass of third body equals to zero. This situation is depicted in the figure below.
+The Sitnikov problem is a particular case of 3-body problem. We have two bodies with masses $m_1 = m_2 = m$. They move on elliptic orbits around common center of mass by Kepler law. Third body moves perpendicular to the plane of their orbits through the center of mass. The mass of third body equals zero. This situation is depicted in the figure below.
 <p align="center">
 <img  src="https://github.com/LAstroNomer/Sitnikov_problem/blob/master/Sitnikov_Problem_Konfiguration.jpeg"  width="350" />
 </p>
