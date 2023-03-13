@@ -1,7 +1,7 @@
-#My solve of Sitnikov problem
+# My solve of Sitnikov problem
 ***
 
-#Description
+# Description
 ***
 
 ## What does this script do?
@@ -19,4 +19,12 @@ The Sitnikov problem is a particular case of 3-body problem. We have two body wi
 <img  src="https://github.com/LAstroNomer/Sitnikov_problem/blob/master/Sitnikov_Problem_Konfiguration.jpeg"  width="350" />
 </p>
 
+We take the axis of application ($z$) along the movement of the third body. The equation of motion is:
 
+$$
+    \ddots{z} = - \frac{z}{(\rho(t)^2 + z^2)^{3/2}}
+$$
+
+$$
+    \rho(t) = a(1 + e \cos(E))
+$$
