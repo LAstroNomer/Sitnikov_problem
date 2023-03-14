@@ -176,7 +176,7 @@ delimiter| The symbol used to separate the columns. If you use spaces or tabs, t
 There is an example of my script work. I got e = 0.1, h1=0, h2=2.5, step=0.1, atol=$10^{-13}$, rtol=$10^{-10}$, method=DOP853.
 
 <p align="center">
-<img  src="https://github.com/LAstroNomer/Sitnikov_problem/blob/master/Sitnikov_Problem_Konfiguration.jpeg"  width="350" />
+<img  src="https://github.com/LAstroNomer/Sitnikov_problem/blob/master/example.png"  width="350" />
 </p>
 
 ### For communication
