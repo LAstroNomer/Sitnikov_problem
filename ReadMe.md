@@ -11,6 +11,7 @@
 - scipy
 - subprocess
 - tqdm
+- multiprocessing
 
 
 ## How to use
