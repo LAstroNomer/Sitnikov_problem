@@ -1,5 +1,22 @@
 # My solution of Sitnikov problem
 
+## Required python packages
+
+- argparse
+- json
+- matplotlib
+- numpy
+- os
+- pathlib
+- scipy
+- subprocess
+- tqdm
+
+
+## How to use
+1. Create new input file with **$python3 run.py --get_json** or **$python3 run.py --get_json --json_name FILE.json**
+2. Edit **default.json** or **FILE.json** (see details below)
+3. Run script: **$python3 run.py [--json_name FILE.json]**
 
 ## Description
 
@@ -13,8 +30,6 @@
 All results are output in physical quantities $t$, $\frac{dZ(t)}{dt}$, $Z(t)$. Details and dimensions are described in the paragraph below. 
 
 ### Equation of motion
-
-***
 
 The Sitnikov problem is a particular case of 3-body problem. We have two bodies with masses $m_1 = m_2 = m$. They move on elliptic orbits around common center of mass by Kepler law. Third body moves perpendicular to the plane of their orbits through the center of mass. The mass of third body equals zero. This situation is depicted in the figure below.
 <p align="center">
@@ -77,18 +92,12 @@ $$
 
 This system we solve in our algorithm. When we output the results, we go back from E to t.
 
-### How to use
-***
-1. Create new input file with **$python3 run.py --get_json** or **$python3 run.py --get_json --json_name FILE.json**
-2. Edit **default.json** or **FILE.json** (see details below)
-3. Run script: **$python3 run.py [--json_name FILE.json]**
-
 ### Input parameters
 ***
 File json includes all the parameters that you can use to regulate the process of the script. All parameters are divided into blocks.
 
 #### **0. Integrator** 
-This part include information required by the integrator. In my script i use [scipy.integrate.solve_ivp](https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.solve_ivp.html) to solve the system of ODE. For more information, see the scipy documentation.
+This part include information required by the integrator. In my script i use [scipy.integrate.solve_ivp](https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.solve_ivp.html) to solve the ODE system. For more information, see the scipy documentation.
 Name | Description | Type | Default |
 ---  | ---         | ---  | ---     |
 $atol$ \& $rtol$| Relative and absolute tolerances. The solver keeps the local error estimates less than $atol + rtol \cdot abs(y)$. Here $rtol$ controls a relative accuracy (number of correct digits), while $atol$ controls absolute accuracy (number of correct decimal places). | float | $10^{-10}$ \& $10^{-6}$|
